@@ -1,5 +1,18 @@
 /* ============ COMMON STYLES ============ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
+img {
+  display: block;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -8,12 +21,16 @@ a {
 ol,
 ul {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 button {
   cursor: pointer;
   color: inherit;
   border: none;
+  padding: 0;
 }
 
 address {
@@ -26,6 +43,14 @@ body {
   background-color: #ffffff;
 }
 
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .section-title {
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -34,6 +59,7 @@ body {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .item-title {
@@ -43,6 +69,7 @@ body {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 8px;
 }
 
 .item-text {
@@ -50,7 +77,33 @@ body {
   letter-spacing: 0.02em;
 }
 
+.section-padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 /* ============ HEADER ============ */
+
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.page-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-nav {
+  display: flex;
+  gap: 76px;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
 
 .page-logo {
   font-family: 'Raleway', sans-serif;
@@ -67,10 +120,13 @@ body {
 }
 
 .nav-link {
+  display: block;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .nav-link:hover,
@@ -80,6 +136,10 @@ body {
   color: #404bbf;
 }
 
+.address-list {
+  display: flex;
+  gap: 40px;
+}
 .address-link {
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -90,6 +150,8 @@ body {
 .hero {
   background-color: #2e2f42;
   color: #ffffff;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -98,6 +160,10 @@ body {
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 496px;
+  margin-bottom: 48px;
 }
 
 .hero-btn {
@@ -105,11 +171,27 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 16px 32px;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #404bbf;
+}
+
+/* ============ ABOUT ============ */
+
+.about-list {
+  display: flex;
+  gap: 24px;
+}
+.about-item {
+  width: calc((100% - 24px) / 4);
 }
 
 /* ============ TEAM ============ */
