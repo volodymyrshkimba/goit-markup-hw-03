@@ -1,0 +1,143 @@
+/* ============ COMMON STYLES ============ */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  border: none;
+}
+
+address {
+  font-style: normal;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+}
+
+.section-title {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.11;
+  font-size: 36px;
+  text-align: center;
+  color: #2e2f42;
+  text-transform: capitalize;
+}
+
+.item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  text-transform: capitalize;
+}
+
+.item-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* ============ HEADER ============ */
+
+.page-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+
+.logo-part {
+  color: #2e2f42;
+}
+
+.nav-link {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.address-link:hover,
+.address-link:focus {
+  color: #404bbf;
+}
+
+.address-link {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* ============ HERO ============ */
+
+.hero {
+  background-color: #2e2f42;
+  color: #ffffff;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.hero-btn {
+  background-color: #4d5ae5;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #404bbf;
+}
+
+/* ============ TEAM ============ */
+
+.team {
+  background-color: #f4f4fd;
+}
+
+.team-item {
+  background-color: #ffffff;
+}
+
+.team .item-title,
+.team .item-text {
+  text-align: center;
+}
+/* ============ FOOTER ============ */
+
+.page-footer {
+  background-color: #2e2f42;
+}
+
+.page-footer .logo-part {
+  color: #f4f4fd;
+}
+
+.footer-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
