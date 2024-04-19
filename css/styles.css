@@ -83,6 +83,18 @@ body {
   padding-bottom: 120px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* ============ HEADER ============ */
 
 .page-header {
@@ -97,7 +109,7 @@ body {
 
 .page-nav {
   display: flex;
-  gap: 76px;
+  margin-right: 76px;
   align-items: center;
 }
 
@@ -178,6 +190,8 @@ body {
   padding: 16px 32px;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  min-width: 169px;
+  height: 56px;
 }
 
 .hero-btn:hover,
@@ -196,9 +210,7 @@ body {
 }
 
 /* ============ TEAM ============ */
-.team .thumb {
-  margin-bottom: 32px;
-}
+
 .team {
   background-color: #f4f4fd;
 }
@@ -210,11 +222,14 @@ body {
 
 .team-item {
   background-color: #ffffff;
-  padding-bottom: 32px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   border-radius: 0 0 4px 4px;
   width: calc((100% - 72px) / 4);
+}
+
+.team-item-bottom {
+  padding: 32px 16px;
 }
 
 .team .item-title,
@@ -239,9 +254,7 @@ body {
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
-  padding-top: 32px;
-  padding-left: 16px;
-  padding-bottom: 32px;
+  padding: 32px 16px;
 }
 
 /* ============ FOOTER ============ */
@@ -260,6 +273,10 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  margin-top: 16px;
   width: 264px;
+}
+
+.page-footer .page-logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
